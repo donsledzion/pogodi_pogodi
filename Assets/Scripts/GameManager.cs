@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     private RunawayChickenSpawner _runawayChickenSpawner;
     private UIController _uiController;
 
+    public int Score => _score;
+
     private void Awake()
     {
         if (Instance == null)
