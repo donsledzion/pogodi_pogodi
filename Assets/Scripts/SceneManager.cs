@@ -34,7 +34,7 @@ public class SceneManager : MonoBehaviour
         }
         AudioController.StopPlaying();
         AudioController.SetVolume(1f);
-        AsyncOperation ao = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Level1");
+        AsyncOperation ao = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("MainGame");
         ao.allowSceneActivation = false;
         while (ao.isDone == false)
         {

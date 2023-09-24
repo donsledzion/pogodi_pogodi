@@ -6,11 +6,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private int _maxFails;/*
-    [SerializeField] private float _startSpawnInterval;
-    [SerializeField] private float _startFallingInterval;*/
-    [SerializeField] private int _upspeedScoreInterval;
-    [SerializeField] private float _upspeedFactor;
+    [SerializeField] private int _maxFails;
     public static GameManager Instance { get; private set; }
 
     private int _score;
@@ -19,8 +15,9 @@ public class GameManager : MonoBehaviour
     private bool _isGameOver;
 
     private PlayerController _player;
-    private EggsSpawner _eggSpawner;
+    private CollectiblesSpawner _collectiblesSpawner;
     private RunawayChickenSpawner _runawayChickenSpawner;
+    private DifficultyController _difficultyController;
     private UIController _uiController;
 
     public int Score => _score;
@@ -74,7 +71,7 @@ public class GameManager : MonoBehaviour
             if (_score > highScore)
                 PlayerPrefs.SetInt("highScore", _score);
             _uiController.UpdateScore(_score);
-            ManageDificulty();
+            _difficultyController.ManageDificulty(_score);
 
         }
         else
@@ -93,17 +90,22 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        _eggSpawner.enabled = false;
+        _collectiblesSpawner.enabled = false;
         _isGameOver = true;
         _player.gameObject.SetActive(false);
         _uiController.GameOver(_score, _score > _startHighScore);
         AudioController.PlayGameOver();
     }
 
-    internal void RegisterEggSpawner(EggsSpawner eggsSpawner)
+    internal void RegisterCollectiblesSpawner(CollectiblesSpawner collectiblesSpawner)
     {
-        _eggSpawner = eggsSpawner;
-        _eggSpawner.enabled = true;
+        _collectiblesSpawner = collectiblesSpawner;
+        _collectiblesSpawner.enabled = true;
+    }
+
+    internal void RegisterDifficultyController(DifficultyController difficultyController)
+    {
+        _difficultyController = difficultyController;
     }
 
     public void ResetStats()
@@ -111,32 +113,5 @@ public class GameManager : MonoBehaviour
         _isGameOver = false;
         _score = 0;
         _fails = 0;
-    }
-
-    private void ManageDificulty()
-    {
-        if(_score % _upspeedScoreInterval == 0)
-        {
-            HurryUp();
-            if (_score % (2 * _upspeedScoreInterval) == 0)
-                IncreaseSpeed();
-            else
-                DecreaseInterval();
-        }
-    }
-
-    private void IncreaseSpeed()
-    {
-        _eggSpawner.SetSpawnableInterval(1f - _upspeedFactor);
-    }
-
-    private void DecreaseInterval()
-    {
-        _eggSpawner.SetSpawnInterval(1f - _upspeedFactor);
-    }
-
-    private void HurryUp()
-    {
-        _uiController.HurryUp();
     }
 }

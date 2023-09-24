@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EggsSpawner : MonoBehaviour
+public class CollectiblesSpawner : MonoBehaviour
 {
     [SerializeField] private RampSpawner[] _ramps;
 
@@ -13,7 +13,7 @@ public class EggsSpawner : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.RegisterEggSpawner(this);
+        GameManager.Instance.RegisterCollectiblesSpawner(this);
         timer = 0f;
     }
 
