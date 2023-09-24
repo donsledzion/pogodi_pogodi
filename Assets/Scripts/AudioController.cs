@@ -71,6 +71,11 @@ public class AudioController : MonoBehaviour
         Instance._audioSource.volume = Mathf.Clamp(volume, 0.0f, 1.0f);
     }
 
+    public static float GetVolume()
+    {
+        return Instance._audioSource.volume;
+    }
+
     public static void StopPlaying()
     {
         Instance._audioSource.Stop();

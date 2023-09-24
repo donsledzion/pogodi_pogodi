@@ -22,12 +22,13 @@ public class SceneManager : MonoBehaviour
     IEnumerator FadeInToGame()
     {
         AudioController.Loop(false);
+        float volumeLevel = AudioController.GetVolume();
         if (fadeStarted)
             yield break;
         fadeStarted = true;
         while (cg.alpha > 0)
         {
-            AudioController.SetVolume(cg.alpha);
+            AudioController.SetVolume(cg.alpha * volumeLevel);
             cg.alpha -= fadeSpeed * Time.deltaTime;
 
             yield return null;
