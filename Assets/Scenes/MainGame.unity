@@ -781,6 +781,7 @@ GameObject:
   - component: {fileID: 333358877}
   - component: {fileID: 333358876}
   - component: {fileID: 333358875}
+  - component: {fileID: 333358878}
   m_Layer: 5
   m_Name: ButtonRightTop
   m_TagString: Untagged
@@ -852,19 +853,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 333358876}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1380692731}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: GoRightTop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &333358876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,6 +892,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333358873}
   m_CullTransparentMesh: 1
+--- !u!114 &333358878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333358873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1380692731}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: GoRightTop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &353555530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1835,7 @@ GameObject:
   - component: {fileID: 649819886}
   - component: {fileID: 649819885}
   - component: {fileID: 649819884}
+  - component: {fileID: 649819887}
   m_Layer: 5
   m_Name: ButtonRightBottom
   m_TagString: Untagged
@@ -1888,19 +1907,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649819885}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1380692731}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: GoRightBottom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &649819885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,6 +1946,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649819882}
   m_CullTransparentMesh: 1
+--- !u!114 &649819887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649819882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1380692731}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: GoRightBottom
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &688604504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3248,7 @@ GameObject:
   - component: {fileID: 994358430}
   - component: {fileID: 994358429}
   - component: {fileID: 994358428}
+  - component: {fileID: 994358431}
   m_Layer: 5
   m_Name: ButtonLeftBottom
   m_TagString: Untagged
@@ -3283,19 +3320,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 994358429}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1380692731}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: GoLeftBottom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &994358429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3334,6 +3359,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994358426}
   m_CullTransparentMesh: 1
+--- !u!114 &994358431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994358426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1380692731}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: GoLeftBottom
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1037358635
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,6 +6332,7 @@ GameObject:
   - component: {fileID: 1998326511}
   - component: {fileID: 1998326510}
   - component: {fileID: 1998326509}
+  - component: {fileID: 1998326512}
   m_Layer: 5
   m_Name: ButtonLeftTop
   m_TagString: Untagged
@@ -6349,19 +6404,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1998326510}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1380692731}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: GoLeftTop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1998326510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6400,6 +6443,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998326507}
   m_CullTransparentMesh: 1
+--- !u!114 &1998326512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998326507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1380692731}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: GoLeftTop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2002150094
 GameObject:
   m_ObjectHideFlags: 0
