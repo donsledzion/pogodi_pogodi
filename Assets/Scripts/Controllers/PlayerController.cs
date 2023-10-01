@@ -14,9 +14,6 @@ public class PlayerController : MonoBehaviour
 
     public BoardPosition PlayerPosition => _playerPosition;
 
-    private void Awake()
-    {
-    }
 
     private void Start()
     {
